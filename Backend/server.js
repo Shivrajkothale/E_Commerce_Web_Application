@@ -17,7 +17,7 @@ const app = express();
 // ✅ Configure allowed origins for CORS
 const allowedOrigins = [
   'http://localhost:5173',                // local frontend
-  'https://your-frontend.vercel.app'      // replace with actual Vercel frontend URL
+  'https://e-commerce-web-application-ljym.vercel.app/' // add your frontend URL
 ];
 
 app.use(cors({
@@ -51,3 +51,5 @@ app.use(errorHandler);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));
+
+module.exports = app;
